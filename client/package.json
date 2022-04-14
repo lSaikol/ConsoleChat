@@ -1,0 +1,32 @@
+{
+  "name": "consolechat",
+  "version": "2.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "electron-updater": "^4.2.5",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "electron": "^18.0.3"
+  },
+  "build": {
+    "appId": "com.example.consolechat",
+    "productName": "ConsoleChat",
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --x64 --win",
+    "dist32": "electron-builder --ia32 --win"
+  },
+  "author": "Saiko",
+  "license": "ISC"
+}

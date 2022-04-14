@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Discord;
+    src: url("./fonts/discord.ttf")
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+}
+
+input, textarea, #drag-box, #infobox, #onlineUsers, #chat, label, #space1 {
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: Discord;
+}
+
+input, textarea {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 0px 4px 10px;
+    border: 0px;
+}
+
+#drag-box {
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.075);
+}
+
+#menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#menu {
+    margin: 0;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.075);
+}
+
+.actionWin {
+    float: right;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::placeholder {
+    text-shadow: none;
+}
+
+#infobox {
+    text-align: center;
+    border: 2px solid;
+    margin-bottom: 15px;
+}
+
+#onlineUsers {
+    float: right;
+    color: white;
+    margin-right: 10px;
+}
+
+#additionalPanel {
+    height: 20px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#loadingBox {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 2px;
+    border: 2px solid white;
+}
+
+#block {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#center-login {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    padding: 20px;
+}
+
+button:active, button:focus, input:active, input:focus, textarea:active, textarea:focus {
+    outline: none;
+}
+button::-moz-focus-inner, input::-moz-focus-inner, textarea::-moz-focus-inner {
+    border: 0;
+}
+
+button, input, textarea, #drag-box, label, #textmessage, #onlineUsers {
+    text-shadow:    -2px 0 0 rgba(255, 255, 255, 0.10),
+                    -4px 0 0 rgba(255, 255, 255, 0.07),
+                    -6px 0 0 rgba(255, 255, 255, 0.04),
+                     2px 0 0 rgba(255, 255, 255, 0.10),
+                     4px 0 0 rgba(255, 255, 255, 0.07),
+                     6px 0 0 rgba(255, 255, 255, 0.04);
+}
+
+.i-error {
+    color: red;
+    border-color: rgba(255, 0, 0, 0.7);
+    text-shadow:    -2px 0 0 rgba(255, 0, 0, 0.10),
+                    -4px 0 0 rgba(255, 0, 0, 0.07),
+                    -6px 0 0 rgba(255, 0, 0, 0.04),
+                     2px 0 0 rgba(255, 0, 0, 0.10),
+                     4px 0 0 rgba(255, 0, 0, 0.07),
+                     6px 0 0 rgba(255, 0, 0, 0.04);
+}
+
+.i-error:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.i-info {
+    color: rgba(0, 200, 200, 1);;
+    border-color: rgba(0, 200, 200, 0.7);
+    text-shadow:    -2px 0 0 rgba(0, 255, 255, 0.10),
+                    -4px 0 0 rgba(0, 255, 255, 0.07),
+                    -6px 0 0 rgba(0, 255, 255, 0.04),
+                     2px 0 0 rgba(0, 255, 255, 0.10),
+                     4px 0 0 rgba(0, 255, 255, 0.07),
+                     6px 0 0 rgba(0, 255, 255, 0.04);
+}
+
+.i-info:hover {
+    background-color: rgba(0, 200, 200, 0.2);
+}
+
+button, div {
+    user-select: none;
+}
+
+#space1 {
+    color:white;
+}
+
+#messageInput, #exit {
+    display: inline;
+    margin-left: 10px;
+}
+
+#send {
+    margin-left: 1px;
+}
+
+button {
+    padding: 7px 10px 5px 10px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+#login, #auth {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#chat {
+    height: 190;
+    width: 360;
+    overflow-y: auto;
+    background-color: black;
+}
+
+#textmessage {
+    color: white;
+    word-wrap: break-word;
+    font-size: 18px;
+    /* border-top: 1px solid rgb(230, 230, 230); */
+    margin-top: 5px;
+}
+
+#colorName {
+    color: rgba(0, 200, 0, 1);
+    text-shadow:    -2px 0 0 rgba(0, 255, 0, 0.10),
+                    -4px 0 0 rgba(0, 255, 0, 0.07),
+                    -6px 0 0 rgba(0, 255, 0, 0.04),
+                     2px 0 0 rgba(0, 255, 0, 0.10),
+                     4px 0 0 rgba(0, 255, 0, 0.07),
+                     6px 0 0 rgba(0, 255, 0, 0.04);
+}
+
+#colorTextNotification {
+    color: rgba(0, 200, 200, 1);
+    text-shadow:    -2px 0 0 rgba(0, 255, 255, 0.10),
+                    -4px 0 0 rgba(0, 255, 255, 0.07),
+                    -6px 0 0 rgba(0, 255, 255, 0.04),
+                     2px 0 0 rgba(0, 255, 255, 0.10),
+                     4px 0 0 rgba(0, 255, 255, 0.07),
+                     6px 0 0 rgba(0, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.025)
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.7);;
+}
+
+::-webkit-resizer{
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+.checkbox {
+    float: right;
+    margin-right: 10px;
+}
+
+input[type=checkbox] {
+    display: none;
+    color: white;
+}
+
+input[type=checkbox] + label:before {
+    content: "☐ ";
+    color: white;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "■ ";
+	font-size: 15px;
+	color: white;
+	text-align: center;
+    line-height: 15px;
+}
+
+label {
+    cursor: pointer;
+    color: white;
+}
+
+
+.screen-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(0deg, rgba(127,127,127,0.11), rgba(127,127,127,0.11) 2px, transparent 2px, transparent 4px);
+}

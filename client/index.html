@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="menu">
+            <button class="actionWin" id="close">X</button>
+            <button class="actionWin" id="expand">[ . ]</button>
+            <button class="actionWin" id="wrap">—</button>
+            <button class="actionWin" id="dev">Dev</button>
+            <div id="drag-box" style="-webkit-app-region: drag;"></div>
+        </div>
+        <div id="main">
+            <div id="interface"></div>            
+        </div>
+        <script src="menu.js"></script>
+        <script src="socket.io.min.js"></script>
+        <script src="errors.js"></script>
+        <script src="client.js"></script>
+        <script src="loader.js"></script>
+        <script src="script.js"></script>
+        <!-- <div class="screen-effect"></div> -->
+    </body>
+</html>
