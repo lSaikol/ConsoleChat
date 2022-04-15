@@ -25,5 +25,5 @@
     "dist32": "electron-builder --ia32 --win"
   },
   "author": "Saiko",
-  "license": "ISC"
+  "license": "MIT"
 }
